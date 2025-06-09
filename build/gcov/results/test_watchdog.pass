@@ -1,0 +1,39 @@
+---
+:source:
+  :file: test/test_watchdog.c
+  :dirname: test
+  :basename: test_watchdog.c
+:successes:
+- :test: test_watchdog_should_call_callback_on_timeout
+  :line: 35
+  :message: ''
+  :unity_test_time: 0
+- :test: test_watchdog_should_not_call_callback_if_kicked
+  :line: 46
+  :message: ''
+  :unity_test_time: 0
+- :test: test_watchdog_callback_called_only_once
+  :line: 59
+  :message: ''
+  :unity_test_time: 0
+- :test: test_watchdog_init_with_null_callback
+  :line: 72
+  :message: ''
+  :unity_test_time: 0
+- :test: test_watchdog_tick_exceeds_timeout_immediately
+  :line: 81
+  :message: ''
+  :unity_test_time: 0
+- :test: test_watchdog_kick_after_timeout_resets
+  :line: 90
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 6
+  :passed: 6
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.06444459996419027
