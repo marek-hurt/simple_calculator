@@ -1,0 +1,19 @@
+---
+:source:
+  :file: test/test_calculator.c
+  :dirname: test
+  :basename: test_calculator.c
+:successes:
+- :test: test_add_should_return_sum_of_two_integers
+  :line: 12
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 1
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.11504539998713881
