@@ -15,6 +15,7 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
+extern void test_mul_should_return_multiplication_of_two_integers(void);
 
 
 /*=======Mock Management=====*/
@@ -47,6 +48,34 @@ void verifyTest(void)
   CMock_Verify();
 }
 
+/*=======Test Runner Used To Run Each Test=====*/
+static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE line_num)
+{
+    Unity.CurrentTestName = name;
+    Unity.CurrentTestLineNumber = (UNITY_UINT) line_num;
+#ifdef UNITY_USE_COMMAND_LINE_ARGS
+    if (!UnityTestMatches())
+        return;
+#endif
+    Unity.NumberOfTests++;
+    UNITY_CLR_DETAILS();
+    UNITY_EXEC_TIME_START();
+    CMock_Init();
+    if (TEST_PROTECT())
+    {
+        setUp();
+        func();
+    }
+    if (TEST_PROTECT())
+    {
+        tearDown();
+        CMock_Verify();
+    }
+    CMock_Destroy();
+    UNITY_EXEC_TIME_STOP();
+    UnityConcludeTest();
+}
+
 /*=======MAIN=====*/
  int main(int argc, char** argv)
 {
@@ -58,12 +87,15 @@ void verifyTest(void)
     {
       UnityPrint("test_calculator.");
       UNITY_PRINT_EOL();
+      UnityPrint("  test_mul_should_return_multiplication_of_two_integers");
+      UNITY_PRINT_EOL();
       return 0;
     }
     return parse_status;
   }
 #endif
   UnityBegin("test_calculator.c");
+  run_test(test_mul_should_return_multiplication_of_two_integers, "test_mul_should_return_multiplication_of_two_integers", 18);
 
   return UNITY_END();
 }

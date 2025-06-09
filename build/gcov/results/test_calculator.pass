@@ -4,8 +4,8 @@
   :dirname: test
   :basename: test_calculator.c
 :successes:
-- :test: test_add_should_return_sum_of_two_integers
-  :line: 12
+- :test: test_mul_should_return_multiplication_of_two_integers
+  :line: 18
   :message: ''
   :unity_test_time: 0
 :failures: []
@@ -16,4 +16,4 @@
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.11504539998713881
+:time: 0.10918689996469766
