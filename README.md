@@ -4,7 +4,9 @@ Zkusebni projekt na osahani unit testingu v C pomoci Ceedling. Pro spusteni je p
 
 odkazy:
 https://gcovr.com/en/8.3/index.html
+
 https://github.com/ThrowTheSwitch/Ceedling/blob/master/docs/CeedlingPacket.md
+
 https://www.doxygen.nl/index.html
 
 Dulezite prikazy:
