@@ -1,6 +1,6 @@
 # simple_calculator
 
-Zkusebni projekt na osahani unit testingu v C pomoci Ceedling. Pro spusteni je potreba Perl, Ceedling, mingw64, gcov, gcovr, doxygen...
+Zkusebni projekt na osahani unit testingu v C pomoci Ceedling. Puvodne mel byt kalkulacka, ale bude obsahovat asi cokoliv, co me napadne v ramci learningu. Pro spusteni je potreba Perl, Ceedling, mingw64, gcov, gcovr, doxygen...
 
 odkazy:
 
