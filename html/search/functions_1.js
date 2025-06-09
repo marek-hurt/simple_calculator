@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['multiply_0',['multiply',['../calculator_8c.html#a390660dbeb35c8538e7f24bfb067b2bc',1,'multiply(int a, int b):&#160;calculator.c'],['../calculator_8h.html#a390660dbeb35c8538e7f24bfb067b2bc',1,'multiply(int a, int b):&#160;calculator.c']]]
+  ['cbuf_5finit_0',['cbuf_init',['../circular__buffer_8c.html#ad3f84bc357069eeb734fb314f3d46273',1,'cbuf_init(circular_buffer_t *cbuf, uint8_t *buffer, uint16_t size):&#160;circular_buffer.c'],['../circular__buffer_8h.html#ad3f84bc357069eeb734fb314f3d46273',1,'cbuf_init(circular_buffer_t *cbuf, uint8_t *buffer, uint16_t size):&#160;circular_buffer.c']]],
+  ['cbuf_5fis_5fempty_1',['cbuf_is_empty',['../circular__buffer_8c.html#a3bcdef0f8c8094fa724b098485c69086',1,'cbuf_is_empty(const circular_buffer_t *cbuf):&#160;circular_buffer.c'],['../circular__buffer_8h.html#a3bcdef0f8c8094fa724b098485c69086',1,'cbuf_is_empty(const circular_buffer_t *cbuf):&#160;circular_buffer.c']]],
+  ['cbuf_5fis_5ffull_2',['cbuf_is_full',['../circular__buffer_8c.html#a8633434e8e52ccd85be76bc489cc6ddd',1,'cbuf_is_full(const circular_buffer_t *cbuf):&#160;circular_buffer.c'],['../circular__buffer_8h.html#a8633434e8e52ccd85be76bc489cc6ddd',1,'cbuf_is_full(const circular_buffer_t *cbuf):&#160;circular_buffer.c']]],
+  ['cbuf_5fread_3',['cbuf_read',['../circular__buffer_8c.html#a47a0f5cc7413f6359c55afb403bf7c38',1,'cbuf_read(circular_buffer_t *cbuf, uint8_t *data):&#160;circular_buffer.c'],['../circular__buffer_8h.html#a47a0f5cc7413f6359c55afb403bf7c38',1,'cbuf_read(circular_buffer_t *cbuf, uint8_t *data):&#160;circular_buffer.c']]],
+  ['cbuf_5fwrite_4',['cbuf_write',['../circular__buffer_8c.html#ad976d3f88f39e7c5eae375f05f7c3b06',1,'cbuf_write(circular_buffer_t *cbuf, uint8_t data):&#160;circular_buffer.c'],['../circular__buffer_8h.html#ad976d3f88f39e7c5eae375f05f7c3b06',1,'cbuf_write(circular_buffer_t *cbuf, uint8_t data):&#160;circular_buffer.c']]]
 ];

@@ -1,0 +1,35 @@
+---
+:source:
+  :file: test/test_circular_buffer.c
+  :dirname: test
+  :basename: test_circular_buffer.c
+:successes:
+- :test: test_buffer_should_be_empty_after_init
+  :line: 20
+  :message: ''
+  :unity_test_time: 0
+- :test: test_write_and_read_single_byte
+  :line: 25
+  :message: ''
+  :unity_test_time: 0
+- :test: test_buffer_should_fill_and_return_full
+  :line: 36
+  :message: ''
+  :unity_test_time: 0
+- :test: test_reading_from_empty_buffer_should_fail
+  :line: 44
+  :message: ''
+  :unity_test_time: 0
+- :test: test_write_read_wraparound_should_work
+  :line: 49
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 5
+  :passed: 5
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.1179310999577865
