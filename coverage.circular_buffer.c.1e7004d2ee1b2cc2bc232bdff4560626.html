@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-06-09 13:55:34</td>
+      <td>2025-06-09 19:47:31</td>
     </tr>
   </table>
 </div>
@@ -73,11 +73,11 @@
       <th>Condition coverage</th>
       <th>Block coverage</th>
     </tr>
-    <tr><td><a href="#l8">cbuf_init (line 8)</a></td><td>called 5 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
-    <tr><td><a href="#l42">cbuf_is_empty (line 42)</a></td><td>called 4 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
-    <tr><td><a href="#l38">cbuf_is_full (line 38)</a></td><td>called 2 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
-    <tr><td><a href="#l27">cbuf_read (line 27)</a></td><td>called 10 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
-    <tr><td><a href="#l16">cbuf_write (line 16)</a></td><td>called 14 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l8">cbuf_init (line 8)</a></td><td>called 10 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l42">cbuf_is_empty (line 42)</a></td><td>called 8 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l38">cbuf_is_full (line 38)</a></td><td>called 4 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l27">cbuf_read (line 27)</a></td><td>called 20 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l16">cbuf_write (line 16)</a></td><td>called 28 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
   </table>
 </details>
 
@@ -144,49 +144,49 @@
       <td class="lineno"><a id="l8" href="#l8">8</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">5</td>
+      <td class="linecount coveredLine">10</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">cbuf_init</span><span class="p">(</span><span class="n">circular_buffer_t</span><span class="w"> </span><span class="o">*</span><span class="n">cbuf</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l9" href="#l9">9</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">5</td>
+      <td class="linecount coveredLine">10</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">buffer</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l10" href="#l10">10</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">5</td>
+      <td class="linecount coveredLine">10</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l11" href="#l11">11</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">5</td>
+      <td class="linecount coveredLine">10</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">head</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l12" href="#l12">12</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">5</td>
+      <td class="linecount coveredLine">10</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">tail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l13" href="#l13">13</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">5</td>
+      <td class="linecount coveredLine">10</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l14" href="#l14">14</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">5</td>
+      <td class="linecount coveredLine">10</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
@@ -200,7 +200,7 @@
       <td class="lineno"><a id="l16" href="#l16">16</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">14</td>
+      <td class="linecount coveredLine">28</td>
       <td class="src coveredLine"><span class="n">cbuf_status_t</span><span class="w"> </span><span class="nf">cbuf_write</span><span class="p">(</span><span class="n">circular_buffer_t</span><span class="w"> </span><span class="o">*</span><span class="n">cbuf</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -209,19 +209,19 @@
         <details class="linebranchDetails">
           <summary class="linebranchSummary">2/2</summary>
           <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 1 times.</div>
-            <div class="takenBranch">&check; Branch 1 (2&rightarrow;4) taken 13 times.</div>
+            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 2 times.</div>
+            <div class="takenBranch">&check; Branch 1 (2&rightarrow;4) taken 26 times.</div>
           </div>
         </details>
       </td>
-      <td class="linecount coveredLine">14</td>
+      <td class="linecount coveredLine">28</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l18" href="#l18">18</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
+      <td class="linecount coveredLine">2</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">CBUF_FULL</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -242,28 +242,28 @@
       <td class="lineno"><a id="l21" href="#l21">21</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">13</td>
+      <td class="linecount coveredLine">26</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">buffer</span><span class="p">[</span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">head</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l22" href="#l22">22</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">13</td>
+      <td class="linecount coveredLine">26</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">head</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">head</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l23" href="#l23">23</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">13</td>
+      <td class="linecount coveredLine">26</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">count</span><span class="o">++</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l24" href="#l24">24</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">13</td>
+      <td class="linecount coveredLine">26</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">CBUF_OK</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -284,7 +284,7 @@
       <td class="lineno"><a id="l27" href="#l27">27</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">10</td>
+      <td class="linecount coveredLine">20</td>
       <td class="src coveredLine"><span class="n">cbuf_status_t</span><span class="w"> </span><span class="nf">cbuf_read</span><span class="p">(</span><span class="n">circular_buffer_t</span><span class="w"> </span><span class="o">*</span><span class="n">cbuf</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -293,19 +293,19 @@
         <details class="linebranchDetails">
           <summary class="linebranchSummary">2/2</summary>
           <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 1 times.</div>
-            <div class="takenBranch">&check; Branch 1 (2&rightarrow;4) taken 9 times.</div>
+            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 2 times.</div>
+            <div class="takenBranch">&check; Branch 1 (2&rightarrow;4) taken 18 times.</div>
           </div>
         </details>
       </td>
-      <td class="linecount coveredLine">10</td>
+      <td class="linecount coveredLine">20</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l29" href="#l29">29</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
+      <td class="linecount coveredLine">2</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">CBUF_EMPTY</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -326,28 +326,28 @@
       <td class="lineno"><a id="l32" href="#l32">32</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">9</td>
+      <td class="linecount coveredLine">18</td>
       <td class="src coveredLine"><span class="w">    </span><span class="o">*</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">buffer</span><span class="p">[</span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">tail</span><span class="p">];</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l33" href="#l33">33</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">9</td>
+      <td class="linecount coveredLine">18</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">tail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">tail</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l34" href="#l34">34</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">9</td>
+      <td class="linecount coveredLine">18</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">count</span><span class="o">--</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l35" href="#l35">35</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">9</td>
+      <td class="linecount coveredLine">18</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">CBUF_OK</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -368,14 +368,14 @@
       <td class="lineno"><a id="l38" href="#l38">38</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">2</td>
+      <td class="linecount coveredLine">4</td>
       <td class="src coveredLine"><span class="kt">bool</span><span class="w"> </span><span class="nf">cbuf_is_full</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">circular_buffer_t</span><span class="w"> </span><span class="o">*</span><span class="n">cbuf</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l39" href="#l39">39</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">2</td>
+      <td class="linecount coveredLine">4</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -396,14 +396,14 @@
       <td class="lineno"><a id="l42" href="#l42">42</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">4</td>
+      <td class="linecount coveredLine">8</td>
       <td class="src coveredLine"><span class="kt">bool</span><span class="w"> </span><span class="nf">cbuf_is_empty</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">circular_buffer_t</span><span class="w"> </span><span class="o">*</span><span class="n">cbuf</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l43" href="#l43">43</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">4</td>
+      <td class="linecount coveredLine">8</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">cbuf</span><span class="o">-&gt;</span><span class="n">count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
