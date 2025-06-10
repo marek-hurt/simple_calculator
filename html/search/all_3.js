@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['head_0',['head',['../structcircular__buffer__t.html#a5cf324efaebfa9b8acc5cd0784358d62',1,'circular_buffer_t']]]
+  ['gpio_2eh_0',['gpio.h',['../gpio_8h.html',1,'']]],
+  ['gpio_5fclear_5fpin_1',['gpio_clear_pin',['../gpio_8h.html#a4ddcb64213a8adb20b58c50476d6627a',1,'gpio.h']]],
+  ['gpio_5fset_5fpin_2',['gpio_set_pin',['../gpio_8h.html#ab595f8128e7b7589bf617781e6da1db1',1,'gpio.h']]]
 ];
